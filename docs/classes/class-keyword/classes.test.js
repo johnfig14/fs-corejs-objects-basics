@@ -8,11 +8,25 @@ Test('Optimus Prime', t => {
   t.is(optimusPrime.greet(), `Hi, I'm Optimus Prime`);
 });
 
+Test('Ironhide', t => {
+  const { ironhide } = Robots;
+  t.is(ironhide.name, 'Ironhide');
+  t.is(ironhide.faction, FACTIONS.Autobots);
+  t.is(ironhide.greet(), `Hi, I'm Ironhide`);
+});
+
 Test('Megatron', t => {
   const { megatron } = Robots;
   t.is(megatron.name, 'Megatron');
   t.is(megatron.faction, FACTIONS.Decepticons);
   t.is(megatron.greet(), `Hi, I'm Megatron`);
+});
+
+Test('Starscream', t => {
+  const { starscream } = Robots;
+  t.is(starscream.name, 'Starscream');
+  t.is(starscream.faction, FACTIONS.Decepticons);
+  t.is(starscream.greet(), `Hi, I'm Starscream`);
 });
 
 Test('Can create bumblebee from Robot', t => {

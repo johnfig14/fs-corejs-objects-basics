@@ -20,13 +20,27 @@ export class OptimusPrime extends Robot {
     }
 };
 
+export class Ironhide extends Robot {
+    constructor () {
+        super ("Ironhide", FACTIONS.Autobots);
+    }
+};
+
 export class Megatron extends Robot {
     constructor () {
         super ("Megatron", FACTIONS.Decepticons);
     }
 };
 
+export class Starscream extends Robot {
+    constructor () {
+        super ("Starscream", FACTIONS.Decepticons);
+    }
+};
+
 export default {
     optimusPrime: new OptimusPrime(),
-    megatron: new Megatron()
+    ironhide: new Ironhide(),
+    megatron: new Megatron(),
+    starscream: new Starscream()
 };
