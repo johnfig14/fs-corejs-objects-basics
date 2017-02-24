@@ -3,7 +3,6 @@ import Robots, { FACTIONS, Robot } from './';
 
 Test('Optimus Prime', t => {
   const { optimusPrime } = Robots;
-  
   t.is(optimusPrime.name, 'Optimus Prime');
   t.is(optimusPrime.faction, FACTIONS.Autobots);
   t.is(optimusPrime.greet(), `Hi, I'm Optimus Prime`);
@@ -11,7 +10,6 @@ Test('Optimus Prime', t => {
 
 Test('Megatron', t => {
   const { megatron } = Robots;
-  
   t.is(megatron.name, 'Megatron');
   t.is(megatron.faction, FACTIONS.Decepticons);
   t.is(megatron.greet(), `Hi, I'm Megatron`);
